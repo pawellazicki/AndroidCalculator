@@ -47,4 +47,16 @@ public class StringNumber {
         }
         return 0;
     }
+
+    public void delete(){
+        if(numberBuilder.length() > 0)
+            if(numberBuilder.charAt(numberBuilder.length()-1) == '.' && numberBuilder.charAt(numberBuilder.length() - 2) == '0')
+                numberBuilder.delete(0,1);
+            else
+                numberBuilder.deleteCharAt(numberBuilder.length() - 1);
+    }
+
+    public String getStr(){
+        return numberBuilder.toString();
+    }
 }

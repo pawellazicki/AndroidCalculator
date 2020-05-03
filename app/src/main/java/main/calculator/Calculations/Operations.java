@@ -35,10 +35,18 @@ public class Operations {
         return stringNumber.append(num);
     }
 
+    public void delete(){
+        stringNumber.delete();
+    }
+
     public void clear(){
         result = 0;
         stringNumber.clear();
         lastOperation = '0';
+    }
+
+    public String getStrNumber(){
+        return stringNumber.getStr();
     }
 
     private void doOperation(char operation){
