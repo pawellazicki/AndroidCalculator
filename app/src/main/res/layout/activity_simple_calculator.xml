@@ -15,14 +15,16 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.35">
+            android:layout_weight="0.20">
 
             <TextView
                 android:id="@+id/textViewCalculations"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginRight="15dp"
+                android:layout_marginStart="15dp"
                 android:layout_marginBottom="20dp"
                 android:layout_weight="0.35"
                 android:gravity="bottom"
@@ -32,12 +34,13 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 tools:ignore="RtlCompat" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.13"
+            android:layout_weight="0.16"
             android:orientation="horizontal">
 
             <Button
@@ -53,8 +56,6 @@
                 android:layout_height="match_parent"
                 android:text="C"
                 android:layout_weight="1"/>
-
-
 
             <Button
                 android:id="@+id/buttonBack"
@@ -75,79 +76,79 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.13"
+            android:layout_weight="0.16"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/button7"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:text="7"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:text="7" />
 
             <Button
                 android:id="@+id/button8"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:text="8"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:text="8" />
 
             <Button
                 android:id="@+id/button9"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:text="9"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:text="9" />
 
             <Button
                 android:id="@+id/buttonMult"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:text="*"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:text="*" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.13"
+            android:layout_weight="0.16"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/button4"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:text="4"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:text="4" />
 
             <Button
                 android:id="@+id/button5"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:text="5"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:text="5" />
 
             <Button
                 android:id="@+id/button6"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:text="6"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:text="6" />
 
             <Button
                 android:id="@+id/buttonMinus"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:text="-"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:text="-" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.13"
+            android:layout_weight="0.16"
             android:orientation="horizontal">
 
             <Button
@@ -175,15 +176,15 @@
                 android:id="@+id/buttonAdd"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:text="+"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:text="+" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.13"
+            android:layout_weight="0.16"
             android:orientation="horizontal">
 
             <Button

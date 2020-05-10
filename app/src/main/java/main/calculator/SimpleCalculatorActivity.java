@@ -145,12 +145,7 @@ public class CalculatorActivity extends AppCompatActivity {
         buttonSum.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                double result = operate('=');
-                int toCompare = (int)(result);
-                if(Double.compare(toCompare, result) == 0)
-                    displayText(String.valueOf(toCompare));
-                else
-                    displayText(String.valueOf(result));
+                displayResultNumber('=');
                 operations.clear();
                 toClear = true;
             }
@@ -159,32 +154,32 @@ public class CalculatorActivity extends AppCompatActivity {
         buttonAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                displayResultNumber('+');
                 appendText("+");
-                operate('+');
             }
         });
 
         buttonMinus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                displayResultNumber('-');
                 appendText("-");
-                operate('-');
             }
         });
 
         buttonMult.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                displayResultNumber('*');
                 appendText("*");
-                operate('*');
             }
         });
 
         buttonDiv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                displayResultNumber('/');
                 appendText("/");
-                operate('/');
             }
         });
 
@@ -224,8 +219,20 @@ public class CalculatorActivity extends AppCompatActivity {
 
     private void checkTextToClear(){
         if(toClear){
+            operations.clear();
             displayText("");
             toClear = false;
+        }
+    }
+
+    private void displayResultNumber(char operation){
+        if(textViewCalculations.length() > 0) {
+            double result = operate(operation);
+            int toCompare = (int) (result);
+            if (Double.compare(toCompare, result) == 0)
+                displayText(String.valueOf(toCompare));
+            else
+                displayText(String.valueOf(result));
         }
     }
 
