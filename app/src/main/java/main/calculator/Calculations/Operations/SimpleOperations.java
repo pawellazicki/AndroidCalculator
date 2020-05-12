@@ -1,4 +1,4 @@
 package main.calculator.Calculations.Operations;
 
-public class Addition {
+public class SimpleOperations {
 }
